@@ -1,0 +1,64 @@
+{
+  "families": [
+    {
+      "name": "John",
+      "age": 101,
+      "children": [
+        {
+          "name": "Jane",
+          "age": 60,
+          "children": [
+            {
+              "name": "Jim",
+              "age": 20,
+              "children": [
+                {
+                  "name": "Jill",
+                  "age": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jill",
+          "age": 80,
+          "children": [
+            {
+              "name": "Jack",
+              "age": 60,
+              "children": [
+                {
+                  "name": "Jill",
+                  "age": 41,
+                  "children": [
+                    {
+                      "name": "Jill",
+                      "age": 22,
+                      "children": [
+                        {
+                          "name": "Jill",
+                          "age": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jake",
+      "age": 30,
+      "children": [
+        {
+          "name": "Jane",
+          "age": 25
+        }
+      ]
+    }
+  ]
+}

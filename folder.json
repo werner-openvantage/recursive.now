@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "name": "Root",
+      "parent": null
+    },
+    {
+      "id": 2,
+      "name": "Documents",
+      "parent": 1
+    },
+    {
+      "id": 3,
+      "name": "Pictures",
+      "parent": 1
+    },
+    {
+      "id": 4,
+      "name": "Work",
+      "parent": 2
+    },
+    {
+      "id": 5,
+      "name": "Personal",
+      "parent": 2
+    },
+    {
+      "id": 6,
+      "name": "Vacation",
+      "parent": 3
+    },
+    {
+      "id": 7,
+      "name": "Family",
+      "parent": 3
+    },
+    {
+      "id": 8,
+      "name": "Projects",
+      "parent": 4
+    },
+    {
+      "id": 9,
+      "name": "Reports",
+      "parent": 4
+    },
+    {
+      "id": 10,
+      "name": "Taxes",
+      "parent": 5
+    }
+  ]
+}
