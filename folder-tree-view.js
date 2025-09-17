@@ -13,7 +13,7 @@ const createFolderTree = (folders, parent = null) => {
 
 const printFolderTree = (folderTree, level = 0) => {
   folderTree.forEach(item => {
-    console.log(`${"-".repeat(level)}>${item.name}`);
+    console.log(`|${"_".repeat(level)}>${item.name}`);
     if(item.children) {
       printFolderTree(item.children, level + 1);
     }

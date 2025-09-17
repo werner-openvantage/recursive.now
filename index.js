@@ -1,6 +1,6 @@
 const fibonacci = (prev = 1, curr = 1) => {
   console.log("x", prev);
-  if (curr > 100) {
+  if (curr > 100000000000000) {
     return;
   }
   return fibonacci(curr, prev + curr);

@@ -11,4 +11,37 @@ const createFolderTree = (folders, parent = null) => {
   return folderTree;
 };
 
-console.log(createFolderTree(folder.folders));
+const flattenTree = (folder, node) => {
+  let retVal = [];
+  folder.forEach(item => {
+    if (item.children.length > 0) {
+      retVal.push(...flattenTree(item.children));
+    }
+    delete item.children;
+    retVal.push(item);
+  });
+  return retVal;
+}
+
+const validateTree = (tree) => {
+  const initialFolders = folder.folders;
+  const flattenedTree = flattenTree(tree).flat();
+  const problematicFolders = [];
+  const foundAllChildren = initialFolders.filter(p => {
+    const x = !flattenedTree.find(item => item.id === p.id);
+    if (x) {
+      problematicFolders.push(p);
+    }
+    return x;
+  });
+  console.log(problematicFolders);
+  return foundAllChildren.length === 0;
+}
+
+const tree = createFolderTree(folder.folders);
+
+console.log(JSON.stringify(tree, null, 2));
+
+// const isValid = validateTree(tree);
+
+// console.log(isValid);
